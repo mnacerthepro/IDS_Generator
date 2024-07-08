@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IDS Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" id="new-ids">New IDS</a></li>
+            <li><a href="#" id="edit-ids">Edit IDS</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>IDS Generator</h1>
+        <input type="file" id="file-input" style="display: none;" accept=".ids">
+        <form id="idsForm">
+            <div class="form-group">
+                <label for="project_name">Project Name:</label>
+                <input type="text" id="project_name" name="project_name" required>
+            </div>
+            <div class="form-group">
+                <label for="entity_name">Entity Name:</label>
+                <input type="text" id="entity_name" name="entity_name" required>
+            </div>
+            <div id="parameters">
+                <!-- Parameter groups will be dynamically added here by JavaScript -->
+            </div>
+            <button type="button" id="add-parameter">Add Parameter</button>
+            <button type="submit">Generate IDS</button>
+        </form>
+    </div>
+    
+    <footer>
+        <p>Made by mnacer</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
